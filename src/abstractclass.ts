@@ -3,13 +3,10 @@
  * Cannot be instantiated directly.
  */
 abstract class TakePhoto {
-  constructor(
-    public cameraMode: string,
-    public filter: string
-  ) {}
+  constructor(public cameraMode: string, public filter: string) {}
 }
 
-class Instagram extends TakePhoto {  
+class Instagram extends TakePhoto {
   constructor(
     public cameraMode: string,
     public filter: string,
